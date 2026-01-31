@@ -1,0 +1,27 @@
+{
+  "name": "my-dapp",
+  "version": "0.1.0",
+  "description": "A Web3 application - foundation built with Cradle",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy:token": "ts-node scripts/deploy-erc20.ts",
+    "token:info": "ts-node scripts/token-info.ts",
+    "agent:start": "tsx src/agent/runtime.ts",
+    "agent:register": "tsx src/agent/registry.ts register",
+    "agent:status": "tsx src/agent/registry.ts status"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "license": "MIT",
+  "keywords": [
+    "web3",
+    "dapp"
+  ]
+}
